@@ -85,3 +85,4 @@ D:\LTMCB\LAB_1_NEW\NT106\Lab_1\Lab_1\obj\Debug\net8.0-windows\refint\Lab_1.dll
 D:\LTMCB\LAB_1_NEW\NT106\Lab_1\Lab_1\obj\Debug\net8.0-windows\Lab_1.pdb
 D:\LTMCB\LAB_1_NEW\NT106\Lab_1\Lab_1\obj\Debug\net8.0-windows\Lab_1.genruntimeconfig.cache
 D:\LTMCB\LAB_1_NEW\NT106\Lab_1\Lab_1\obj\Debug\net8.0-windows\ref\Lab_1.dll
+C:\Users\ADMIN\Documents\Bài giảng\Năm hai\HK2\NT106. Lập Trình Mạng\Nhom21\NT106\Lab_1\Lab_1\obj\Debug\net8.0-windows\Lab_1.Lab1_bai5.resources
