@@ -21,6 +21,11 @@ namespace Lab_1
 
         private void button2_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(textBox1.Text))
+            {
+                MessageBox.Show("Vui lòng nhập số cần chuyển đổi!");
+                return;
+            }
             bool IsBinary(string input)
             {
                 return input.All(c => c == '0' || c == '1');
