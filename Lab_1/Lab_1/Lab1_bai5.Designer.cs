@@ -46,16 +46,17 @@
             lblthapnhat = new Label();
             gbDiem = new GroupBox();
             label3 = new Label();
-            tbDisplay = new TextBox();
+            tbDisplay = new RichTextBox();
             gbDiem.SuspendLayout();
             SuspendLayout();
             // 
             // lblPhanMemQuanLyDiem
             // 
             lblPhanMemQuanLyDiem.AutoSize = true;
+            lblPhanMemQuanLyDiem.Font = new Font("Segoe UI", 15F);
             lblPhanMemQuanLyDiem.Location = new Point(383, 21);
             lblPhanMemQuanLyDiem.Name = "lblPhanMemQuanLyDiem";
-            lblPhanMemQuanLyDiem.Size = new Size(293, 36);
+            lblPhanMemQuanLyDiem.Size = new Size(452, 54);
             lblPhanMemQuanLyDiem.TabIndex = 0;
             lblPhanMemQuanLyDiem.Text = "Phần mềm quản lý điểm";
             lblPhanMemQuanLyDiem.Click += label1_Click;
@@ -73,12 +74,12 @@
             // 
             tbInput.Location = new Point(276, 116);
             tbInput.Name = "tbInput";
-            tbInput.Size = new Size(494, 42);
+            tbInput.Size = new Size(559, 42);
             tbInput.TabIndex = 2;
             // 
             // bXuat
             // 
-            bXuat.Location = new Point(858, 114);
+            bXuat.Location = new Point(868, 112);
             bXuat.Name = "bXuat";
             bXuat.Size = new Size(150, 46);
             bXuat.TabIndex = 3;
@@ -89,7 +90,7 @@
             // lblSoMonFail
             // 
             lblSoMonFail.AutoSize = true;
-            lblSoMonFail.Location = new Point(732, 694);
+            lblSoMonFail.Location = new Point(707, 663);
             lblSoMonFail.Name = "lblSoMonFail";
             lblSoMonFail.Size = new Size(233, 36);
             lblSoMonFail.TabIndex = 9;
@@ -97,7 +98,7 @@
             // 
             // tbDiemTB
             // 
-            tbDiemTB.Location = new Point(383, 517);
+            tbDiemTB.Location = new Point(406, 507);
             tbDiemTB.Name = "tbDiemTB";
             tbDiemTB.ReadOnly = true;
             tbDiemTB.Size = new Size(200, 42);
@@ -105,7 +106,7 @@
             // 
             // tbDiemCaoNhat
             // 
-            tbDiemCaoNhat.Location = new Point(383, 613);
+            tbDiemCaoNhat.Location = new Point(406, 584);
             tbDiemCaoNhat.Name = "tbDiemCaoNhat";
             tbDiemCaoNhat.ReadOnly = true;
             tbDiemCaoNhat.Size = new Size(200, 42);
@@ -113,7 +114,7 @@
             // 
             // tbSoMonPass
             // 
-            tbSoMonPass.Location = new Point(383, 694);
+            tbSoMonPass.Location = new Point(406, 657);
             tbSoMonPass.Name = "tbSoMonPass";
             tbSoMonPass.ReadOnly = true;
             tbSoMonPass.Size = new Size(200, 42);
@@ -121,7 +122,7 @@
             // 
             // tbXepLoai
             // 
-            tbXepLoai.Location = new Point(1003, 494);
+            tbXepLoai.Location = new Point(1008, 504);
             tbXepLoai.Name = "tbXepLoai";
             tbXepLoai.ReadOnly = true;
             tbXepLoai.Size = new Size(200, 42);
@@ -129,7 +130,7 @@
             // 
             // tbDiemThapNhat
             // 
-            tbDiemThapNhat.Location = new Point(1027, 574);
+            tbDiemThapNhat.Location = new Point(1008, 590);
             tbDiemThapNhat.Name = "tbDiemThapNhat";
             tbDiemThapNhat.ReadOnly = true;
             tbDiemThapNhat.Size = new Size(200, 42);
@@ -137,7 +138,7 @@
             // 
             // tbSoMonFail
             // 
-            tbSoMonFail.Location = new Point(1059, 697);
+            tbSoMonFail.Location = new Point(1008, 663);
             tbSoMonFail.Name = "tbSoMonFail";
             tbSoMonFail.ReadOnly = true;
             tbSoMonFail.Size = new Size(200, 42);
@@ -146,7 +147,7 @@
             // lbldiemtb
             // 
             lbldiemtb.AutoSize = true;
-            lbldiemtb.Location = new Point(84, 523);
+            lbldiemtb.Location = new Point(88, 507);
             lbldiemtb.Name = "lbldiemtb";
             lbldiemtb.Size = new Size(206, 36);
             lbldiemtb.TabIndex = 16;
@@ -155,7 +156,7 @@
             // lbldiemcaonhat
             // 
             lbldiemcaonhat.AutoSize = true;
-            lbldiemcaonhat.Location = new Point(109, 623);
+            lbldiemcaonhat.Location = new Point(88, 584);
             lbldiemcaonhat.Name = "lbldiemcaonhat";
             lbldiemcaonhat.Size = new Size(272, 36);
             lbldiemcaonhat.TabIndex = 17;
@@ -164,7 +165,7 @@
             // lblsomondau
             // 
             lblsomondau.AutoSize = true;
-            lblsomondau.Location = new Point(88, 708);
+            lblsomondau.Location = new Point(88, 657);
             lblsomondau.Name = "lblsomondau";
             lblsomondau.Size = new Size(153, 36);
             lblsomondau.TabIndex = 18;
@@ -173,7 +174,7 @@
             // lblxeploai
             // 
             lblxeploai.AutoSize = true;
-            lblxeploai.Location = new Point(734, 508);
+            lblxeploai.Location = new Point(707, 507);
             lblxeploai.Name = "lblxeploai";
             lblxeploai.Size = new Size(195, 36);
             lblxeploai.TabIndex = 19;
@@ -182,7 +183,7 @@
             // lblthapnhat
             // 
             lblthapnhat.AutoSize = true;
-            lblthapnhat.Location = new Point(747, 603);
+            lblthapnhat.Location = new Point(707, 590);
             lblthapnhat.Name = "lblthapnhat";
             lblthapnhat.Size = new Size(284, 36);
             lblthapnhat.TabIndex = 20;
@@ -210,18 +211,17 @@
             // 
             // tbDisplay
             // 
-            tbDisplay.Location = new Point(47, 61);
-            tbDisplay.Multiline = true;
+            tbDisplay.Location = new Point(32, 41);
             tbDisplay.Name = "tbDisplay";
-            tbDisplay.ReadOnly = true;
-            tbDisplay.Size = new Size(1118, 191);
-            tbDisplay.TabIndex = 1;
+            tbDisplay.Size = new Size(1114, 192);
+            tbDisplay.TabIndex = 2;
+            tbDisplay.Text = "";
             // 
             // Lab1_bai5
             // 
             AutoScaleDimensions = new SizeF(14F, 36F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1300, 825);
+            ClientSize = new Size(1278, 728);
             Controls.Add(gbDiem);
             Controls.Add(lblthapnhat);
             Controls.Add(lblxeploai);
@@ -270,6 +270,6 @@
         private Label lblthapnhat;
         private GroupBox gbDiem;
         private Label label3;
-        private TextBox tbDisplay;
+        private RichTextBox tbDisplay;
     }
 }

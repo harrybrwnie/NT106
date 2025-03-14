@@ -44,6 +44,8 @@ namespace Lab_1
 
         private void bXuat_Click(object sender, EventArgs e)
         {
+            //tbInput.Clear();
+            tbDisplay.Clear();
             gbDiem.Visible = true;
             string input = tbInput.Text;
             string[] diemString = input.Split(',');
@@ -51,22 +53,34 @@ namespace Lab_1
             List<double> diemList = new List<double>();
 
             int soMonPass = 0;
+            tbDisplay.AcceptsTab = true;
 
             for(int i = 0; i < diemString.Length; ++i)
             {
+               
+
                 if (double.TryParse(diemString[i].Trim(), out double diem))
                 {
+                    if(diem > 10 || diem < 0)
+                    {
+                        MessageBox.Show("Nhap so thuc  0 <= x<= 10");
+                        return;
+                    }
 
                     diemList.Add(diem);
-                    if (i % 4 == 0 && i != 0)
-                    {
-                        tbDisplay.AppendText($"\nMôn {i + 1}: {diem}\t");
-                    }
-                    else
-                    {
-                        tbDisplay.AppendText($"Môn {i + 1}: {diem}\t");
-                    }
+                    string output = "";
+                    if (i == 0)
+                        output = $"Môn {i + 1}: {diem} ";
+                    else if(i % 5 == 0) output = $"\r\nMôn {i + 1}: {diem}";
+                    else output = $"\tMôn {i + 1}: {diem} ";
+                    tbDisplay.AppendText(output);
                     if (diem >= 5) ++soMonPass;
+                }
+            
+                else
+                {
+                    MessageBox.Show("Nhap so thuc");
+                    return;
                 }
             }
 
