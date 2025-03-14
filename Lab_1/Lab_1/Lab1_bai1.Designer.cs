@@ -43,67 +43,75 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(54, 43);
+            label1.Location = new Point(27, 18);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(222, 36);
+            label1.Size = new Size(102, 15);
             label1.TabIndex = 0;
             label1.Text = "Tổng 2 số nguyên";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(54, 125);
+            label2.Location = new Point(27, 52);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(111, 36);
+            label2.Size = new Size(50, 15);
             label2.TabIndex = 1;
             label2.Text = "Số thứ 1";
             // 
             // iNum1
             // 
-            iNum1.Location = new Point(265, 125);
+            iNum1.Location = new Point(132, 52);
+            iNum1.Margin = new Padding(2, 1, 2, 1);
             iNum1.Name = "iNum1";
-            iNum1.Size = new Size(200, 42);
+            iNum1.Size = new Size(102, 23);
             iNum1.TabIndex = 2;
             iNum1.TextChanged += textBox1_TextChanged;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(54, 203);
+            label3.Location = new Point(27, 85);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(111, 36);
+            label3.Size = new Size(50, 15);
             label3.TabIndex = 3;
             label3.Text = "Số thứ 2";
             // 
             // iNum2
             // 
-            iNum2.Location = new Point(265, 203);
+            iNum2.Location = new Point(132, 85);
+            iNum2.Margin = new Padding(2, 1, 2, 1);
             iNum2.Name = "iNum2";
-            iNum2.Size = new Size(200, 42);
+            iNum2.Size = new Size(102, 23);
             iNum2.TabIndex = 4;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(54, 284);
+            label4.Location = new Point(27, 118);
+            label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(74, 36);
+            label4.Size = new Size(35, 15);
             label4.TabIndex = 5;
             label4.Text = "Tổng";
             // 
             // iSum
             // 
-            iSum.Location = new Point(265, 281);
+            iSum.Location = new Point(132, 117);
+            iSum.Margin = new Padding(2, 1, 2, 1);
             iSum.Name = "iSum";
             iSum.ReadOnly = true;
-            iSum.Size = new Size(200, 42);
+            iSum.Size = new Size(102, 23);
             iSum.TabIndex = 6;
             // 
             // bTinh
             // 
-            bTinh.Location = new Point(591, 363);
+            bTinh.Location = new Point(296, 151);
+            bTinh.Margin = new Padding(2, 1, 2, 1);
             bTinh.Name = "bTinh";
-            bTinh.Size = new Size(150, 46);
+            bTinh.Size = new Size(75, 27);
             bTinh.TabIndex = 7;
             bTinh.Text = "Tính";
             bTinh.UseVisualStyleBackColor = true;
@@ -111,9 +119,10 @@
             // 
             // bXoa
             // 
-            bXoa.Location = new Point(325, 363);
+            bXoa.Location = new Point(162, 151);
+            bXoa.Margin = new Padding(2, 1, 2, 1);
             bXoa.Name = "bXoa";
-            bXoa.Size = new Size(150, 46);
+            bXoa.Size = new Size(75, 27);
             bXoa.TabIndex = 8;
             bXoa.Text = "Xóa";
             bXoa.UseVisualStyleBackColor = true;
@@ -121,19 +130,20 @@
             // 
             // bThoat
             // 
-            bThoat.Location = new Point(54, 363);
+            bThoat.Location = new Point(27, 151);
+            bThoat.Margin = new Padding(2, 1, 2, 1);
             bThoat.Name = "bThoat";
-            bThoat.Size = new Size(150, 46);
+            bThoat.Size = new Size(75, 27);
             bThoat.TabIndex = 9;
             bThoat.Text = "Thoát";
             bThoat.UseVisualStyleBackColor = true;
             bThoat.Click += bThoat_Click;
             // 
-            // bai1
+            // Lab1_bai1
             // 
-            AutoScaleDimensions = new SizeF(14F, 36F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(400, 188);
             Controls.Add(bThoat);
             Controls.Add(bXoa);
             Controls.Add(bTinh);
@@ -144,7 +154,8 @@
             Controls.Add(iNum1);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "bai1";
+            Margin = new Padding(2, 1, 2, 1);
+            Name = "Lab1_bai1";
             Text = "bai1";
             ResumeLayout(false);
             PerformLayout();

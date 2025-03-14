@@ -17,3 +17,25 @@ D:\LTMCB\Lab_1\Lab_1\obj\Debug\net8.0-windows\ref\Lab_1.dll
 D:\LTMCB\Lab_1\Lab_1\obj\Debug\net8.0-windows\Lab_1.Lab1_bai1.resources
 D:\LTMCB\Lab_1\Lab_1\obj\Debug\net8.0-windows\Lab_1.Lab1_bai2.resources
 D:\LTMCB\Lab_1\Lab_1\obj\Debug\net8.0-windows\Lab_1.Lab1_bai3.resources
+C:\Users\ADMIN\Documents\Bài giảng\Năm hai\HK2\NT106. Lập Trình Mạng\Nhom21\NT106\Lab_1\Lab_1\bin\Debug\net8.0-windows\Lab_1.exe
+C:\Users\ADMIN\Documents\Bài giảng\Năm hai\HK2\NT106. Lập Trình Mạng\Nhom21\NT106\Lab_1\Lab_1\bin\Debug\net8.0-windows\Lab_1.deps.json
+C:\Users\ADMIN\Documents\Bài giảng\Năm hai\HK2\NT106. Lập Trình Mạng\Nhom21\NT106\Lab_1\Lab_1\bin\Debug\net8.0-windows\Lab_1.runtimeconfig.json
+C:\Users\ADMIN\Documents\Bài giảng\Năm hai\HK2\NT106. Lập Trình Mạng\Nhom21\NT106\Lab_1\Lab_1\bin\Debug\net8.0-windows\Lab_1.dll
+C:\Users\ADMIN\Documents\Bài giảng\Năm hai\HK2\NT106. Lập Trình Mạng\Nhom21\NT106\Lab_1\Lab_1\bin\Debug\net8.0-windows\Lab_1.pdb
+C:\Users\ADMIN\Documents\Bài giảng\Năm hai\HK2\NT106. Lập Trình Mạng\Nhom21\NT106\Lab_1\Lab_1\obj\Debug\net8.0-windows\Lab_1.Form1.resources
+C:\Users\ADMIN\Documents\Bài giảng\Năm hai\HK2\NT106. Lập Trình Mạng\Nhom21\NT106\Lab_1\Lab_1\obj\Debug\net8.0-windows\Lab_1.Lab1_bai1.resources
+C:\Users\ADMIN\Documents\Bài giảng\Năm hai\HK2\NT106. Lập Trình Mạng\Nhom21\NT106\Lab_1\Lab_1\obj\Debug\net8.0-windows\Lab_1.Lab1_bai2.resources
+C:\Users\ADMIN\Documents\Bài giảng\Năm hai\HK2\NT106. Lập Trình Mạng\Nhom21\NT106\Lab_1\Lab_1\obj\Debug\net8.0-windows\Lab_1.Lab1_bai3.resources
+C:\Users\ADMIN\Documents\Bài giảng\Năm hai\HK2\NT106. Lập Trình Mạng\Nhom21\NT106\Lab_1\Lab_1\obj\Debug\net8.0-windows\Lab_1.Lab1_bai4.resources
+C:\Users\ADMIN\Documents\Bài giảng\Năm hai\HK2\NT106. Lập Trình Mạng\Nhom21\NT106\Lab_1\Lab_1\obj\Debug\net8.0-windows\Lab_1.Properties.Resources.resources
+C:\Users\ADMIN\Documents\Bài giảng\Năm hai\HK2\NT106. Lập Trình Mạng\Nhom21\NT106\Lab_1\Lab_1\obj\Debug\net8.0-windows\Lab_1.csproj.GenerateResource.cache
+C:\Users\ADMIN\Documents\Bài giảng\Năm hai\HK2\NT106. Lập Trình Mạng\Nhom21\NT106\Lab_1\Lab_1\obj\Debug\net8.0-windows\Lab_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Documents\Bài giảng\Năm hai\HK2\NT106. Lập Trình Mạng\Nhom21\NT106\Lab_1\Lab_1\obj\Debug\net8.0-windows\Lab_1.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Documents\Bài giảng\Năm hai\HK2\NT106. Lập Trình Mạng\Nhom21\NT106\Lab_1\Lab_1\obj\Debug\net8.0-windows\Lab_1.AssemblyInfo.cs
+C:\Users\ADMIN\Documents\Bài giảng\Năm hai\HK2\NT106. Lập Trình Mạng\Nhom21\NT106\Lab_1\Lab_1\obj\Debug\net8.0-windows\Lab_1.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\Bài giảng\Năm hai\HK2\NT106. Lập Trình Mạng\Nhom21\NT106\Lab_1\Lab_1\obj\Debug\net8.0-windows\Lab_1.sourcelink.json
+C:\Users\ADMIN\Documents\Bài giảng\Năm hai\HK2\NT106. Lập Trình Mạng\Nhom21\NT106\Lab_1\Lab_1\obj\Debug\net8.0-windows\Lab_1.dll
+C:\Users\ADMIN\Documents\Bài giảng\Năm hai\HK2\NT106. Lập Trình Mạng\Nhom21\NT106\Lab_1\Lab_1\obj\Debug\net8.0-windows\refint\Lab_1.dll
+C:\Users\ADMIN\Documents\Bài giảng\Năm hai\HK2\NT106. Lập Trình Mạng\Nhom21\NT106\Lab_1\Lab_1\obj\Debug\net8.0-windows\Lab_1.pdb
+C:\Users\ADMIN\Documents\Bài giảng\Năm hai\HK2\NT106. Lập Trình Mạng\Nhom21\NT106\Lab_1\Lab_1\obj\Debug\net8.0-windows\Lab_1.genruntimeconfig.cache
+C:\Users\ADMIN\Documents\Bài giảng\Năm hai\HK2\NT106. Lập Trình Mạng\Nhom21\NT106\Lab_1\Lab_1\obj\Debug\net8.0-windows\ref\Lab_1.dll

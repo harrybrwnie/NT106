@@ -24,5 +24,11 @@ namespace Lab_1
             Lab1_bai3 b3 = new Lab1_bai3();
             b3.Show();
         }
+
+        private void bBai4_Click(object sender, EventArgs e)
+        {
+            Lab1_bai4 b4 = new Lab1_bai4();
+            b4.Show();
+        }
     }
 }
