@@ -45,8 +45,8 @@
             lblxeploai = new Label();
             lblthapnhat = new Label();
             gbDiem = new GroupBox();
-            label3 = new Label();
             tbDisplay = new RichTextBox();
+            label3 = new Label();
             gbDiem.SuspendLayout();
             SuspendLayout();
             // 
@@ -54,9 +54,10 @@
             // 
             lblPhanMemQuanLyDiem.AutoSize = true;
             lblPhanMemQuanLyDiem.Font = new Font("Segoe UI", 15F);
-            lblPhanMemQuanLyDiem.Location = new Point(383, 21);
+            lblPhanMemQuanLyDiem.Location = new Point(192, 9);
+            lblPhanMemQuanLyDiem.Margin = new Padding(2, 0, 2, 0);
             lblPhanMemQuanLyDiem.Name = "lblPhanMemQuanLyDiem";
-            lblPhanMemQuanLyDiem.Size = new Size(452, 54);
+            lblPhanMemQuanLyDiem.Size = new Size(222, 28);
             lblPhanMemQuanLyDiem.TabIndex = 0;
             lblPhanMemQuanLyDiem.Text = "Phần mềm quản lý điểm";
             lblPhanMemQuanLyDiem.Click += label1_Click;
@@ -64,24 +65,27 @@
             // lblDanhSachDiem
             // 
             lblDanhSachDiem.AutoSize = true;
-            lblDanhSachDiem.Location = new Point(25, 119);
+            lblDanhSachDiem.Location = new Point(12, 50);
+            lblDanhSachDiem.Margin = new Padding(2, 0, 2, 0);
             lblDanhSachDiem.Name = "lblDanhSachDiem";
-            lblDanhSachDiem.Size = new Size(198, 36);
+            lblDanhSachDiem.Size = new Size(92, 15);
             lblDanhSachDiem.TabIndex = 1;
             lblDanhSachDiem.Text = "Danh sách điểm";
             // 
             // tbInput
             // 
-            tbInput.Location = new Point(276, 116);
+            tbInput.Location = new Point(138, 48);
+            tbInput.Margin = new Padding(2, 1, 2, 1);
             tbInput.Name = "tbInput";
-            tbInput.Size = new Size(559, 42);
+            tbInput.Size = new Size(282, 23);
             tbInput.TabIndex = 2;
             // 
             // bXuat
             // 
-            bXuat.Location = new Point(868, 112);
+            bXuat.Location = new Point(442, 40);
+            bXuat.Margin = new Padding(2, 1, 2, 1);
             bXuat.Name = "bXuat";
-            bXuat.Size = new Size(150, 46);
+            bXuat.Size = new Size(75, 31);
             bXuat.TabIndex = 3;
             bXuat.Text = "Xuất";
             bXuat.UseVisualStyleBackColor = true;
@@ -90,102 +94,114 @@
             // lblSoMonFail
             // 
             lblSoMonFail.AutoSize = true;
-            lblSoMonFail.Location = new Point(707, 663);
+            lblSoMonFail.Location = new Point(354, 276);
+            lblSoMonFail.Margin = new Padding(2, 0, 2, 0);
             lblSoMonFail.Name = "lblSoMonFail";
-            lblSoMonFail.Size = new Size(233, 36);
+            lblSoMonFail.Size = new Size(108, 15);
             lblSoMonFail.TabIndex = 9;
             lblSoMonFail.Text = "Số môn không đậu";
             // 
             // tbDiemTB
             // 
-            tbDiemTB.Location = new Point(406, 507);
+            tbDiemTB.Location = new Point(203, 211);
+            tbDiemTB.Margin = new Padding(2, 1, 2, 1);
             tbDiemTB.Name = "tbDiemTB";
             tbDiemTB.ReadOnly = true;
-            tbDiemTB.Size = new Size(200, 42);
+            tbDiemTB.Size = new Size(102, 23);
             tbDiemTB.TabIndex = 10;
             // 
             // tbDiemCaoNhat
             // 
-            tbDiemCaoNhat.Location = new Point(406, 584);
+            tbDiemCaoNhat.Location = new Point(203, 243);
+            tbDiemCaoNhat.Margin = new Padding(2, 1, 2, 1);
             tbDiemCaoNhat.Name = "tbDiemCaoNhat";
             tbDiemCaoNhat.ReadOnly = true;
-            tbDiemCaoNhat.Size = new Size(200, 42);
+            tbDiemCaoNhat.Size = new Size(102, 23);
             tbDiemCaoNhat.TabIndex = 11;
             // 
             // tbSoMonPass
             // 
-            tbSoMonPass.Location = new Point(406, 657);
+            tbSoMonPass.Location = new Point(203, 274);
+            tbSoMonPass.Margin = new Padding(2, 1, 2, 1);
             tbSoMonPass.Name = "tbSoMonPass";
             tbSoMonPass.ReadOnly = true;
-            tbSoMonPass.Size = new Size(200, 42);
+            tbSoMonPass.Size = new Size(102, 23);
             tbSoMonPass.TabIndex = 12;
             // 
             // tbXepLoai
             // 
-            tbXepLoai.Location = new Point(1008, 504);
+            tbXepLoai.Location = new Point(504, 210);
+            tbXepLoai.Margin = new Padding(2, 1, 2, 1);
             tbXepLoai.Name = "tbXepLoai";
             tbXepLoai.ReadOnly = true;
-            tbXepLoai.Size = new Size(200, 42);
+            tbXepLoai.Size = new Size(102, 23);
             tbXepLoai.TabIndex = 13;
             // 
             // tbDiemThapNhat
             // 
-            tbDiemThapNhat.Location = new Point(1008, 590);
+            tbDiemThapNhat.Location = new Point(504, 246);
+            tbDiemThapNhat.Margin = new Padding(2, 1, 2, 1);
             tbDiemThapNhat.Name = "tbDiemThapNhat";
             tbDiemThapNhat.ReadOnly = true;
-            tbDiemThapNhat.Size = new Size(200, 42);
+            tbDiemThapNhat.Size = new Size(102, 23);
             tbDiemThapNhat.TabIndex = 14;
             // 
             // tbSoMonFail
             // 
-            tbSoMonFail.Location = new Point(1008, 663);
+            tbSoMonFail.Location = new Point(504, 276);
+            tbSoMonFail.Margin = new Padding(2, 1, 2, 1);
             tbSoMonFail.Name = "tbSoMonFail";
             tbSoMonFail.ReadOnly = true;
-            tbSoMonFail.Size = new Size(200, 42);
+            tbSoMonFail.Size = new Size(102, 23);
             tbSoMonFail.TabIndex = 15;
             // 
             // lbldiemtb
             // 
             lbldiemtb.AutoSize = true;
-            lbldiemtb.Location = new Point(88, 507);
+            lbldiemtb.Location = new Point(44, 211);
+            lbldiemtb.Margin = new Padding(2, 0, 2, 0);
             lbldiemtb.Name = "lbldiemtb";
-            lbldiemtb.Size = new Size(206, 36);
+            lbldiemtb.Size = new Size(96, 15);
             lbldiemtb.TabIndex = 16;
             lbldiemtb.Text = "Điểm Trung Bình";
             // 
             // lbldiemcaonhat
             // 
             lbldiemcaonhat.AutoSize = true;
-            lbldiemcaonhat.Location = new Point(88, 584);
+            lbldiemcaonhat.Location = new Point(44, 243);
+            lbldiemcaonhat.Margin = new Padding(2, 0, 2, 0);
             lbldiemcaonhat.Name = "lbldiemcaonhat";
-            lbldiemcaonhat.Size = new Size(272, 36);
+            lbldiemcaonhat.Size = new Size(127, 15);
             lbldiemcaonhat.TabIndex = 17;
             lbldiemcaonhat.Text = "Môn có điểm cao nhất";
             // 
             // lblsomondau
             // 
             lblsomondau.AutoSize = true;
-            lblsomondau.Location = new Point(88, 657);
+            lblsomondau.Location = new Point(44, 274);
+            lblsomondau.Margin = new Padding(2, 0, 2, 0);
             lblsomondau.Name = "lblsomondau";
-            lblsomondau.Size = new Size(153, 36);
+            lblsomondau.Size = new Size(71, 15);
             lblsomondau.TabIndex = 18;
             lblsomondau.Text = "Số môn đậu";
             // 
             // lblxeploai
             // 
             lblxeploai.AutoSize = true;
-            lblxeploai.Location = new Point(707, 507);
+            lblxeploai.Location = new Point(354, 211);
+            lblxeploai.Margin = new Padding(2, 0, 2, 0);
             lblxeploai.Name = "lblxeploai";
-            lblxeploai.Size = new Size(195, 36);
+            lblxeploai.Size = new Size(91, 15);
             lblxeploai.TabIndex = 19;
             lblxeploai.Text = "Xếp loại học lực";
             // 
             // lblthapnhat
             // 
             lblthapnhat.AutoSize = true;
-            lblthapnhat.Location = new Point(707, 590);
+            lblthapnhat.Location = new Point(354, 246);
+            lblthapnhat.Margin = new Padding(2, 0, 2, 0);
             lblthapnhat.Name = "lblthapnhat";
-            lblthapnhat.Size = new Size(284, 36);
+            lblthapnhat.Size = new Size(132, 15);
             lblthapnhat.TabIndex = 20;
             lblthapnhat.Text = "Môn có điểm thấp nhất";
             // 
@@ -193,35 +209,39 @@
             // 
             gbDiem.Controls.Add(tbDisplay);
             gbDiem.Controls.Add(label3);
-            gbDiem.Location = new Point(62, 209);
+            gbDiem.Location = new Point(31, 87);
+            gbDiem.Margin = new Padding(2, 1, 2, 1);
             gbDiem.Name = "gbDiem";
-            gbDiem.Size = new Size(1197, 279);
+            gbDiem.Padding = new Padding(2, 1, 2, 1);
+            gbDiem.Size = new Size(598, 116);
             gbDiem.TabIndex = 21;
             gbDiem.TabStop = false;
             gbDiem.Text = "Danh sách điểm các môn học";
             gbDiem.Visible = false;
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(26, 64);
-            label3.Name = "label3";
-            label3.Size = new Size(0, 36);
-            label3.TabIndex = 0;
-            // 
             // tbDisplay
             // 
-            tbDisplay.Location = new Point(32, 41);
+            tbDisplay.Location = new Point(16, 17);
+            tbDisplay.Margin = new Padding(2, 1, 2, 1);
             tbDisplay.Name = "tbDisplay";
-            tbDisplay.Size = new Size(1114, 192);
+            tbDisplay.Size = new Size(559, 82);
             tbDisplay.TabIndex = 2;
             tbDisplay.Text = "";
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(13, 27);
+            label3.Margin = new Padding(2, 0, 2, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(0, 15);
+            label3.TabIndex = 0;
+            // 
             // Lab1_bai5
             // 
-            AutoScaleDimensions = new SizeF(14F, 36F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1278, 728);
+            ClientSize = new Size(639, 303);
             Controls.Add(gbDiem);
             Controls.Add(lblthapnhat);
             Controls.Add(lblxeploai);
@@ -239,6 +259,7 @@
             Controls.Add(tbInput);
             Controls.Add(lblDanhSachDiem);
             Controls.Add(lblPhanMemQuanLyDiem);
+            Margin = new Padding(2, 1, 2, 1);
             Name = "Lab1_bai5";
             Text = "Lab1_bai5";
             Load += Lab1_bai5_Load;
