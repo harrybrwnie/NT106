@@ -28,5 +28,23 @@ namespace Lab_2
             Bai2 b2 = new Bai2();
             b2.Show();
         }
+
+        private void bBai3_Click(object sender, EventArgs e)
+        {
+            Bai3 b3 = new Bai3();
+            b3.Show();
+        }
+
+        private void bBai4_Click(object sender, EventArgs e)
+        {
+            Bai4 b4 = new Bai4();
+            b4.Show();
+        }
+
+        private void bBai5_Click(object sender, EventArgs e)
+        {
+            Bai5 b5 = new Bai5();
+            b5.Show();
+        }
     }
 }
