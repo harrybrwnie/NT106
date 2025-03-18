@@ -43,6 +43,7 @@
             this.bBai1.TabIndex = 0;
             this.bBai1.Text = "Bài 1";
             this.bBai1.UseVisualStyleBackColor = true;
+            this.bBai1.Click += new System.EventHandler(this.bBai1_Click);
             // 
             // bBai2
             // 
