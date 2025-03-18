@@ -22,5 +22,11 @@ namespace Lab_2
             Bai1 b1 = new Bai1();
             b1.Show();
         }
+
+        private void bBai2_Click(object sender, EventArgs e)
+        {
+            Bai2 b2 = new Bai2();
+            b2.Show();
+        }
     }
 }
