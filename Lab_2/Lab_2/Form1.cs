@@ -16,5 +16,11 @@ namespace Lab_2
         {
             InitializeComponent();
         }
+
+        private void bBai2_Click(object sender, EventArgs e)
+        {
+            Bai2 bai2 = new Bai2();
+            bai2.Show();
+        }
     }
 }
