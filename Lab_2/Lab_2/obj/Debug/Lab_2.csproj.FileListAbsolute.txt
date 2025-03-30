@@ -27,3 +27,4 @@ D:\LTMCB_Lab\NT106\Lab_2\Lab_2\obj\Debug\Lab_2.Bai3.resources
 D:\LTMCB_Lab\NT106\Lab_2\Lab_2\obj\Debug\Lab_2.Bai4.resources
 C:\Users\ADMIN\Documents\Bài giảng\Năm hai\HK2\NT106. Lập Trình Mạng\Nhom21\NT106\Lab_2\Lab_2\obj\Debug\Lab_2.Bai4.resources
 C:\Users\ADMIN\Documents\Bài giảng\Năm hai\HK2\NT106. Lập Trình Mạng\Nhom21\NT106\Lab_2\Lab_2\obj\Debug\Lab_2.Bai5.resources
+D:\LTMCB_Lab\NT106\Lab_2\Lab_2\obj\Debug\Lab_2.Bai5.resources
