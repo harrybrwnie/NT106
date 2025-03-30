@@ -39,6 +39,8 @@
             // 
             // readFilebtn
             // 
+            this.readFilebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.readFilebtn.ForeColor = System.Drawing.Color.Coral;
             this.readFilebtn.Location = new System.Drawing.Point(339, 42);
             this.readFilebtn.Name = "readFilebtn";
             this.readFilebtn.Size = new System.Drawing.Size(124, 39);
@@ -59,6 +61,8 @@
             // 
             // mathbtn
             // 
+            this.mathbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mathbtn.ForeColor = System.Drawing.Color.Coral;
             this.mathbtn.Location = new System.Drawing.Point(339, 114);
             this.mathbtn.Name = "mathbtn";
             this.mathbtn.Size = new System.Drawing.Size(124, 39);
@@ -69,6 +73,8 @@
             // 
             // writeFilebtn
             // 
+            this.writeFilebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.writeFilebtn.ForeColor = System.Drawing.Color.Coral;
             this.writeFilebtn.Location = new System.Drawing.Point(339, 188);
             this.writeFilebtn.Name = "writeFilebtn";
             this.writeFilebtn.Size = new System.Drawing.Size(124, 39);
@@ -111,6 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

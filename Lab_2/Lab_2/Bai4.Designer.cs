@@ -38,27 +38,32 @@
             // lbText
             // 
             this.lbText.AutoSize = true;
-            this.lbText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbText.Location = new System.Drawing.Point(45, 63);
+            this.lbText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbText.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbText.Location = new System.Drawing.Point(22, 33);
+            this.lbText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbText.Name = "lbText";
-            this.lbText.Size = new System.Drawing.Size(659, 33);
+            this.lbText.Size = new System.Drawing.Size(485, 25);
             this.lbText.TabIndex = 0;
             this.lbText.Text = "Nhập MSSV, Họ tên, SĐT,  Điểm Toán, Điểm Văn";
             this.lbText.Click += new System.EventHandler(this.label1_Click);
             // 
             // tbInput
             // 
-            this.tbInput.Location = new System.Drawing.Point(51, 129);
+            this.tbInput.Location = new System.Drawing.Point(27, 85);
+            this.tbInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbInput.Name = "tbInput";
-            this.tbInput.Size = new System.Drawing.Size(653, 153);
+            this.tbInput.Size = new System.Drawing.Size(481, 287);
             this.tbInput.TabIndex = 1;
             this.tbInput.Text = "";
             // 
             // btGhi
             // 
-            this.btGhi.Location = new System.Drawing.Point(51, 336);
+            this.btGhi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btGhi.Location = new System.Drawing.Point(544, 85);
+            this.btGhi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btGhi.Name = "btGhi";
-            this.btGhi.Size = new System.Drawing.Size(167, 78);
+            this.btGhi.Size = new System.Drawing.Size(84, 41);
             this.btGhi.TabIndex = 2;
             this.btGhi.Text = "Ghi File";
             this.btGhi.UseVisualStyleBackColor = true;
@@ -66,9 +71,11 @@
             // 
             // bXoa
             // 
-            this.bXoa.Location = new System.Drawing.Point(303, 336);
+            this.bXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bXoa.Location = new System.Drawing.Point(544, 150);
+            this.bXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bXoa.Name = "bXoa";
-            this.bXoa.Size = new System.Drawing.Size(167, 78);
+            this.bXoa.Size = new System.Drawing.Size(84, 41);
             this.bXoa.TabIndex = 3;
             this.bXoa.Text = "Xóa";
             this.bXoa.UseVisualStyleBackColor = true;
@@ -76,9 +83,11 @@
             // 
             // bXuat
             // 
-            this.bXuat.Location = new System.Drawing.Point(537, 336);
+            this.bXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bXuat.Location = new System.Drawing.Point(544, 210);
+            this.bXuat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bXuat.Name = "bXuat";
-            this.bXuat.Size = new System.Drawing.Size(167, 78);
+            this.bXuat.Size = new System.Drawing.Size(84, 41);
             this.bXuat.TabIndex = 4;
             this.bXuat.Text = "Xuất File";
             this.bXuat.UseVisualStyleBackColor = true;
@@ -86,14 +95,16 @@
             // 
             // Bai4
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(670, 413);
             this.Controls.Add(this.bXuat);
             this.Controls.Add(this.bXoa);
             this.Controls.Add(this.btGhi);
             this.Controls.Add(this.tbInput);
             this.Controls.Add(this.lbText);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Bai4";
             this.Text = "Bai4";
             this.ResumeLayout(false);
