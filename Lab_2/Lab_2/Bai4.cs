@@ -121,7 +121,7 @@ namespace Lab_2
 
         private void bXuat_Click(object sender, EventArgs e)
         {
-            
+            tbInput.ReadOnly = true;
             OpenFileDialog openFileDialog = new OpenFileDialog
             {
                 Title = "Chọn file để mở",
@@ -145,8 +145,10 @@ namespace Lab_2
         }
 
         private void bXoa_Click(object sender, EventArgs e)
+         
         {
             tbInput.Clear();
+            tbInput.ReadOnly = false;
         }
     }
 }
