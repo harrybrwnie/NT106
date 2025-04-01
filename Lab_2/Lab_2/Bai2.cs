@@ -5,7 +5,9 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -18,26 +20,41 @@ namespace Lab_2
             InitializeComponent();
         }
 
-        private void readFile_Click(object sender, EventArgs e)
+private void readFile_Click(object sender, EventArgs e)
+    {
+        OpenFileDialog ofd = new OpenFileDialog();
+        if (ofd.ShowDialog() == DialogResult.OK)  // Kiểm tra nếu đã chọn file
         {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.ShowDialog();
-            FileStream fs = new FileStream(ofd.FileName, FileMode.Open);
-            StreamReader sr = new StreamReader(fs);
+            try
+            {
+                using (FileStream fs = new FileStream(ofd.FileName, FileMode.Open, FileAccess.Read))
+                using (StreamReader sr = new StreamReader(fs))
+                {
+                    string content = sr.ReadToEnd().Trim();  // Xóa khoảng trắng dư thừa
+                    richTextBox1.Text = content;
+                    fileName.Text = ofd.SafeFileName;
+                    url.Text = ofd.FileName;
+                    charCount.Text = content.Length.ToString();
 
-            string content = sr.ReadToEnd();
-            richTextBox1.Text = content;
-            fileName.Text = ofd.SafeFileName.ToString();
-            url.Text = fs.Name.ToString();
-            charCount.Text = content.Length.ToString();
+                    // Đếm số dòng chính xác
+                    string[] lines = content.Split(new[] { "\r\n", "\n" }, StringSplitOptions.RemoveEmptyEntries);
+                    lineCount.Text = lines.Length.ToString();
 
-            content = content.Replace("\r\n", "\r");
-            lineCount.Text = richTextBox1.Lines.Count().ToString();
-            content = content.Replace('\r', ' ');
+                    // Tìm tất cả các từ (bao gồm số thập phân)
+                    string pattern = @"\b\d+\.\d+\b|\b\w+\b";  // Nhận diện số thập phân và từ thông thường
+                    MatchCollection matches = Regex.Matches(content, pattern);
 
-            string[] source = content.Split(new char[] {'.', '?', '!', ';', ':', ',' }, StringSplitOptions.RemoveEmptyEntries);
-            wordCount.Text = source.Count().ToString();
-            fs.Close();
+                    wordCount.Text = matches.Count.ToString();  // Đếm số từ chính xác
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi đọc file: " + ex.Message);
+            }
         }
     }
+
+
+
+}
 }
