@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\LTMCB\\Lab_3\\Lab_3\\Lab_3.csproj": {}
+    "D:\\LTMCB_Lab\\NT106\\Lab_3\\Lab_3\\Lab_3.csproj": {}
   },
   "projects": {
-    "D:\\LTMCB\\Lab_3\\Lab_3\\Lab_3.csproj": {
+    "D:\\LTMCB_Lab\\NT106\\Lab_3\\Lab_3\\Lab_3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LTMCB\\Lab_3\\Lab_3\\Lab_3.csproj",
+        "projectUniqueName": "D:\\LTMCB_Lab\\NT106\\Lab_3\\Lab_3\\Lab_3.csproj",
         "projectName": "Lab_3",
-        "projectPath": "D:\\LTMCB\\Lab_3\\Lab_3\\Lab_3.csproj",
+        "projectPath": "D:\\LTMCB_Lab\\NT106\\Lab_3\\Lab_3\\Lab_3.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\LTMCB\\Lab_3\\Lab_3\\obj\\",
+        "outputPath": "D:\\LTMCB_Lab\\NT106\\Lab_3\\Lab_3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -35,9 +35,13 @@ private void readFile_Click(object sender, EventArgs e)
                     fileName.Text = ofd.SafeFileName;
                     url.Text = ofd.FileName;
                     charCount.Text = content.Length.ToString();
-
-                    // Đếm số dòng chính xác
-                    string[] lines = content.Split(new[] { "\r\n", "\n" }, StringSplitOptions.RemoveEmptyEntries);
+                    if (string.IsNullOrEmpty(content))
+                    {
+                       MessageBox.Show("File trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+                        // Đếm số dòng chính xác
+                        string[] lines = content.Split(new[] { "\r\n", "\n" }, StringSplitOptions.RemoveEmptyEntries);
                     lineCount.Text = lines.Length.ToString();
 
                     // Tìm tất cả các từ (bao gồm số thập phân)

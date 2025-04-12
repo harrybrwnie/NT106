@@ -21,13 +21,23 @@ namespace Lab_2
         private void readFilebtn_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
-            ofd.ShowDialog();
-            FileStream fs = new FileStream(ofd.FileName, FileMode.Open);
-            StreamReader sr = new StreamReader(fs);
-            string content = sr.ReadToEnd();
-            readTextBox.Text = content;
-            fs.Close();
+            if (ofd.ShowDialog() == DialogResult.OK)  // Kiểm tra nếu chọn file
+            {
+                try
+                {
+                    using (FileStream fs = new FileStream(ofd.FileName, FileMode.Open, FileAccess.Read))
+                    using (StreamReader sr = new StreamReader(fs))
+                    {
+                        readTextBox.Text = sr.ReadToEnd();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi đọc file: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
+
 
         private void mathbtn_Click(object sender, EventArgs e)
         {
