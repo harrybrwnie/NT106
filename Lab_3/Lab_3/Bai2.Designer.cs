@@ -28,18 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
+            textBox1 = new TextBox();
+            Listenbtn = new Button();
             SuspendLayout();
+            // 
+            // textBox1
+            // 
+            textBox1.BackColor = SystemColors.ControlLightLight;
+            textBox1.Location = new Point(12, 49);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
+            textBox1.Size = new Size(440, 293);
+            textBox1.TabIndex = 0;
+            // 
+            // Listenbtn
+            // 
+            Listenbtn.Location = new Point(377, 12);
+            Listenbtn.Name = "Listenbtn";
+            Listenbtn.Size = new Size(75, 23);
+            Listenbtn.TabIndex = 1;
+            Listenbtn.Text = "Listen";
+            Listenbtn.UseVisualStyleBackColor = true;
+            Listenbtn.Click += Listenbtn_Click;
             // 
             // Bai2
             // 
-            AutoScaleDimensions = new SizeF(14F, 36F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1359, 791);
+            ClientSize = new Size(464, 354);
+            Controls.Add(Listenbtn);
+            Controls.Add(textBox1);
+            Margin = new Padding(2, 1, 2, 1);
             Name = "Bai2";
             Text = "Bai2";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox textBox1;
+        private Button Listenbtn;
     }
 }
