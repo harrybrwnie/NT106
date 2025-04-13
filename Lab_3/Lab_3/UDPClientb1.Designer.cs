@@ -33,7 +33,7 @@
             lblPort = new Label();
             tbPort = new TextBox();
             lblMessage = new Label();
-            tbMessage = new RichTextBox();
+            rtbMessage = new RichTextBox();
             btnSend = new Button();
             SuspendLayout();
             // 
@@ -78,13 +78,13 @@
             lblMessage.TabIndex = 4;
             lblMessage.Text = "Message";
             // 
-            // tbMessage
+            // rtbMessage
             // 
-            tbMessage.Location = new Point(70, 341);
-            tbMessage.Name = "tbMessage";
-            tbMessage.Size = new Size(965, 168);
-            tbMessage.TabIndex = 5;
-            tbMessage.Text = "";
+            rtbMessage.Location = new Point(70, 341);
+            rtbMessage.Name = "rtbMessage";
+            rtbMessage.Size = new Size(965, 168);
+            rtbMessage.TabIndex = 5;
+            rtbMessage.Text = "";
             // 
             // btnSend
             // 
@@ -102,7 +102,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1149, 719);
             Controls.Add(btnSend);
-            Controls.Add(tbMessage);
+            Controls.Add(rtbMessage);
             Controls.Add(lblMessage);
             Controls.Add(tbPort);
             Controls.Add(lblPort);
@@ -121,7 +121,7 @@
         private Label lblPort;
         private TextBox tbPort;
         private Label lblMessage;
-        private RichTextBox tbMessage;
+        private RichTextBox rtbMessage;
         private Button btnSend;
     }
 }

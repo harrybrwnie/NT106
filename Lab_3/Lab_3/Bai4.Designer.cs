@@ -28,13 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
+            btnTCPClient = new Button();
+            btnTCPListener = new Button();
             SuspendLayout();
+            // 
+            // btnTCPClient
+            // 
+            btnTCPClient.Font = new Font("Segoe UI", 16F);
+            btnTCPClient.Location = new Point(100, 180);
+            btnTCPClient.Name = "btnTCPClient";
+            btnTCPClient.Size = new Size(406, 238);
+            btnTCPClient.TabIndex = 0;
+            btnTCPClient.Text = "TCP Client";
+            btnTCPClient.UseVisualStyleBackColor = true;
+            btnTCPClient.Click += btnTCPClient_Click;
+            // 
+            // btnTCPListener
+            // 
+            btnTCPListener.Font = new Font("Segoe UI", 16F);
+            btnTCPListener.Location = new Point(625, 180);
+            btnTCPListener.Name = "btnTCPListener";
+            btnTCPListener.Size = new Size(406, 238);
+            btnTCPListener.TabIndex = 1;
+            btnTCPListener.Text = "TCP Listener";
+            btnTCPListener.UseVisualStyleBackColor = true;
+            btnTCPListener.Click += btnTCPListener_Click;
             // 
             // Bai4
             // 
-            AutoScaleDimensions = new SizeF(14F, 36F);
+            AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1336, 795);
+            ClientSize = new Size(1145, 662);
+            Controls.Add(btnTCPListener);
+            Controls.Add(btnTCPClient);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Bai4";
             Text = "Bai4";
             Load += Bai4_Load;
@@ -42,5 +69,8 @@
         }
 
         #endregion
+
+        private Button btnTCPClient;
+        private Button btnTCPListener;
     }
 }

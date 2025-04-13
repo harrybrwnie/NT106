@@ -23,7 +23,7 @@ namespace Lab_3
         {
             string ip = tbIPRemoteHost.Text.Trim();
             string Strport = tbPort.Text.Trim();
-            string message = tbMessage.Text.Trim();
+            string message = rtbMessage.Text.Trim();
 
             if(!IPAddress.TryParse(ip, out IPAddress ipaddress)) { 
                 MessageBox.Show("IP khong hop le");
