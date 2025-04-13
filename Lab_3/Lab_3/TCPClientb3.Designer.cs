@@ -1,6 +1,6 @@
 ﻿namespace Lab_3
 {
-    partial class Bai2
+    partial class TCPClientb3
     {
         /// <summary>
         /// Required designer variable.
@@ -28,47 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            Listenbtn = new Button();
+            Sendbtn = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // Sendbtn
             // 
-            textBox1.BackColor = SystemColors.ControlLightLight;
-            textBox1.Location = new Point(12, 49);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(440, 293);
-            textBox1.TabIndex = 0;
+            Sendbtn.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Sendbtn.Location = new Point(12, 12);
+            Sendbtn.Name = "Sendbtn";
+            Sendbtn.Size = new Size(417, 46);
+            Sendbtn.TabIndex = 0;
+            Sendbtn.Text = "Send Message";
+            Sendbtn.UseVisualStyleBackColor = true;
+            Sendbtn.Click += Sendbtn_Click;
             // 
-            // Listenbtn
-            // 
-            Listenbtn.Location = new Point(377, 12);
-            Listenbtn.Name = "Listenbtn";
-            Listenbtn.Size = new Size(75, 31);
-            Listenbtn.TabIndex = 1;
-            Listenbtn.Text = "Listen";
-            Listenbtn.UseVisualStyleBackColor = true;
-            Listenbtn.Click += Listenbtn_Click;
-            // 
-            // Bai2
+            // TCPClientb3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(464, 354);
-            Controls.Add(Listenbtn);
-            Controls.Add(textBox1);
-            Margin = new Padding(2, 1, 2, 1);
-            Name = "Bai2";
-            Text = "Bai2";
+            ClientSize = new Size(441, 70);
+            Controls.Add(Sendbtn);
+            Name = "TCPClientb3";
+            Text = "TCPClientb3";
+            Load += TCPClientb3_Load;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private TextBox textBox1;
-        private Button Listenbtn;
+        private Button Sendbtn;
     }
 }
