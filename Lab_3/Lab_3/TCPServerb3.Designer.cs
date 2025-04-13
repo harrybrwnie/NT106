@@ -1,6 +1,6 @@
 ﻿namespace Lab_3
 {
-    partial class Bai2
+    partial class TCPServerb3
     {
         /// <summary>
         /// Required designer variable.
@@ -28,47 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
             Listenbtn = new Button();
+            textBox1 = new TextBox();
             SuspendLayout();
-            // 
-            // textBox1
-            // 
-            textBox1.BackColor = SystemColors.ControlLightLight;
-            textBox1.Location = new Point(12, 49);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(440, 293);
-            textBox1.TabIndex = 0;
             // 
             // Listenbtn
             // 
-            Listenbtn.Location = new Point(377, 12);
+            Listenbtn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Listenbtn.Location = new Point(422, 12);
             Listenbtn.Name = "Listenbtn";
-            Listenbtn.Size = new Size(75, 31);
-            Listenbtn.TabIndex = 1;
+            Listenbtn.Size = new Size(109, 40);
+            Listenbtn.TabIndex = 0;
             Listenbtn.Text = "Listen";
             Listenbtn.UseVisualStyleBackColor = true;
             Listenbtn.Click += Listenbtn_Click;
             // 
-            // Bai2
+            // textBox1
+            // 
+            textBox1.BackColor = SystemColors.ButtonHighlight;
+            textBox1.Location = new Point(12, 58);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
+            textBox1.Size = new Size(519, 362);
+            textBox1.TabIndex = 1;
+            // 
+            // TCPServerb3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(464, 354);
-            Controls.Add(Listenbtn);
+            ClientSize = new Size(543, 432);
             Controls.Add(textBox1);
-            Margin = new Padding(2, 1, 2, 1);
-            Name = "Bai2";
-            Text = "Bai2";
+            Controls.Add(Listenbtn);
+            Name = "TCPServerb3";
+            Text = "TCPServerb3";
+            FormClosing += TCPServerb3_FormClosing;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private TextBox textBox1;
         private Button Listenbtn;
+        private TextBox textBox1;
     }
 }
