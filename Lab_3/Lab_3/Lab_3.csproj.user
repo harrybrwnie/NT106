@@ -16,6 +16,12 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="TCPClientb3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TCPServerb3.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="UDPClientb1.cs">
       <SubType>Form</SubType>
     </Compile>
