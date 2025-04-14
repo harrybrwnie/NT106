@@ -49,9 +49,10 @@
             // lblName
             // 
             lblName.AutoSize = true;
+            lblName.Font = new Font("Segoe UI", 12F);
             lblName.Location = new Point(78, 607);
             lblName.Name = "lblName";
-            lblName.Size = new Size(69, 30);
+            lblName.Size = new Size(91, 38);
             lblName.TabIndex = 1;
             lblName.Text = "Name";
             // 
@@ -59,15 +60,16 @@
             // 
             tbName.Location = new Point(78, 663);
             tbName.Name = "tbName";
-            tbName.Size = new Size(175, 35);
+            tbName.Size = new Size(219, 35);
             tbName.TabIndex = 2;
             // 
             // lblMessage
             // 
             lblMessage.AutoSize = true;
+            lblMessage.Font = new Font("Segoe UI", 12F);
             lblMessage.Location = new Point(78, 729);
             lblMessage.Name = "lblMessage";
-            lblMessage.Size = new Size(95, 30);
+            lblMessage.Size = new Size(126, 38);
             lblMessage.TabIndex = 3;
             lblMessage.Text = "Message";
             // 
@@ -80,6 +82,7 @@
             // 
             // btnConnect
             // 
+            btnConnect.Font = new Font("Segoe UI", 12F);
             btnConnect.Location = new Point(873, 638);
             btnConnect.Name = "btnConnect";
             btnConnect.Size = new Size(131, 40);
@@ -90,6 +93,7 @@
             // 
             // btnSend
             // 
+            btnSend.Font = new Font("Segoe UI", 12F);
             btnSend.Location = new Point(873, 774);
             btnSend.Name = "btnSend";
             btnSend.Size = new Size(131, 40);

@@ -14,6 +14,7 @@ namespace Lab_3
 {
     public partial class UDPServerb1 : Form
     {
+        private UdpClient udpServer;
         public UDPServerb1()
         {
             InitializeComponent();
@@ -23,7 +24,8 @@ namespace Lab_3
 
         private void btnListen_Click(object sender, EventArgs e)
         {
-            if(!int.TryParse(tbPort.Text.Trim(), out int port)) { 
+            if (!int.TryParse(tbPort.Text.Trim(), out int port))
+            {
                 MessageBox.Show("Port khong hop le");
                 return;
             }
@@ -31,53 +33,66 @@ namespace Lab_3
             cts = new CancellationTokenSource();
             Task.Run(() => StartListening(port, cts.Token));
             AppendMessage($"Server dang lang nghe tai port {port}");
+            btnListen.Enabled = false;
+            tbPort.ReadOnly = true;
         }
 
         private void StartListening(int port, CancellationToken token)
         {
-            try
-            {
-                using (UdpClient udpServer = new UdpClient(port))
-                {
-                    IPEndPoint remoteEP = new IPEndPoint(IPAddress.Any, 0);
+            try {
+                udpServer = new UdpClient(port);
+                IPEndPoint remoteEP = new IPEndPoint(IPAddress.Any, 0);
 
-                    while (!token.IsCancellationRequested)
+                while (!token.IsCancellationRequested)
+                {
+                    try
                     {
                         byte[] data = udpServer.Receive(ref remoteEP);
                         string message = Encoding.UTF8.GetString(data);
-                        string senderIP = remoteEP.Address.ToString();
-
                         AppendMessage($"{remoteEP.Address} : {message}");
-
-
+                    }
+                    catch (SocketException ex)
+                    {
+                        AppendMessage("Socket closed: " + ex.Message);
+                        break;
                     }
                 }
             }
-                catch(Exception ex)
+            catch(Exception ex)
             {
-                AppendMessage("Loi " + ex.Message);
+                AppendMessage("Lỗi khi bắt đầu server: " + ex.Message);
             }
-            
         }
 
         private void AppendMessage(string message)
         {
+            if (tbRecievedMessages == null || tbRecievedMessages.IsDisposed || !tbRecievedMessages.IsHandleCreated)
+                return;
+
             if (tbRecievedMessages.InvokeRequired)
             {
-                tbRecievedMessages.Invoke(new Action(() =>
+                try
                 {
-                    tbRecievedMessages.AppendText(message + Environment.NewLine);
-                }));
+                    tbRecievedMessages.Invoke(new Action(() =>
+                    {
+                        if (!tbRecievedMessages.IsDisposed && tbRecievedMessages.IsHandleCreated)
+                            tbRecievedMessages.AppendText(message + Environment.NewLine);
+                    }));
+                }
+                catch { }
             }
             else
             {
-                tbRecievedMessages.AppendText(message + Environment.NewLine);
+                if (!tbRecievedMessages.IsDisposed && tbRecievedMessages.IsHandleCreated)
+                    tbRecievedMessages.AppendText(message + Environment.NewLine);
             }
         }
 
-        private void UDPServerb1_FormClosing(object sender, FormClosingEventArgs e)
+        private void UDPServerb1_FormClosing_1(object sender, FormClosingEventArgs e)
         {
+            //udpServer?.Close();
             cts?.Cancel();
+            udpServer?.Close();
         }
     }
 }

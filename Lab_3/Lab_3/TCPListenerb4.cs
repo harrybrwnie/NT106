@@ -93,10 +93,11 @@ namespace Lab_3
                     if (byteCount == 0) break;
 
                     string message = Encoding.UTF8.GetString(buffer, 0, byteCount).Trim();
-                    string fullMessage = $"{clientName}: {message}";
+                    IPEndPoint senderEP = (IPEndPoint)client.Client.RemoteEndPoint;
+                    string fullMessage = $"[{senderEP.Address}:{senderEP.Port}] {clientName}: {message}";
                     AppendMessage(fullMessage);
                     chatLog.Add(fullMessage);
-                    await BroadcastMessage(fullMessage);
+                    await BroadcastMessage($"{clientName}: {message}");
                 }
             }
             catch (Exception ex)

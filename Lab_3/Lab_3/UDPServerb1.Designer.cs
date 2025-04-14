@@ -94,6 +94,7 @@
             Controls.Add(lblPort);
             Name = "UDPServerb1";
             Text = "UDPServerb1";
+            FormClosing += UDPServerb1_FormClosing_1;
             ResumeLayout(false);
             PerformLayout();
         }

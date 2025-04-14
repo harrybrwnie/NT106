@@ -25,6 +25,8 @@ namespace Lab_3
             string Strport = tbPort.Text.Trim();
             string message = rtbMessage.Text.Trim();
 
+            rtbMessage.Clear();
+
             if(!IPAddress.TryParse(ip, out IPAddress ipaddress)) { 
                 MessageBox.Show("IP khong hop le");
                 return;
