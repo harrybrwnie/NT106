@@ -51,7 +51,7 @@ namespace Lab_3
             }
             catch (Exception ex)
             {
-                MessageBox.Show("❌ Lỗi kết nối: " + ex.Message);
+                MessageBox.Show("Lỗi kết nối: " + ex.Message);
                
             }
         }
@@ -63,7 +63,6 @@ namespace Lab_3
                 MessageBox.Show("Vui lòng kết nối trước khi gửi tin nhắn");
                 return;
             }
-            ////////////
             btnConnect.Enabled = false;
             tbName.ReadOnly = true;
             string msg = tbMessage.Text.Trim();
@@ -123,7 +122,7 @@ namespace Lab_3
             }
             catch
             {
-                AppendChat("⛔ Mất kết nối đến server.");
+                AppendChat("Mất kết nối đến server.");
                 
             }
         }
