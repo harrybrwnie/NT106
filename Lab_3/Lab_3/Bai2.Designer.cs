@@ -62,6 +62,7 @@
             Margin = new Padding(2, 1, 2, 1);
             Name = "Bai2";
             Text = "Bai2";
+            FormClosing += Bai2_FormClosing;
             ResumeLayout(false);
             PerformLayout();
         }

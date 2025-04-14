@@ -15,7 +15,8 @@ namespace Lab_3
     public partial class Bai2 : Form
     {
         private Socket serverSocket;
-        private Thread listenThread;
+        private CancellationTokenSource cts;
+        private Task listenTask;
         public Bai2()
         {
             InitializeComponent();
@@ -24,49 +25,52 @@ namespace Lab_3
         private void Listenbtn_Click(object sender, EventArgs e)
         {
             Listenbtn.Enabled = false;
-            listenThread = new Thread(StartListening);
-            listenThread.IsBackground = true;
-            listenThread.Start();
+            cts = new CancellationTokenSource();
+            listenTask = Task.Run(() => StartListening(cts.Token));
             AppendLog("Telnet running on port 8080");
         }
 
-        private void StartListening()
+        private void StartListening(CancellationToken token)
         {
-            // Tao socket kieu TCP
-            serverSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-
-            //Bind toi dia chi localhost va cong 8080
-            IPEndPoint localEndPoint = new IPEndPoint(IPAddress.Any, 8080);
-            serverSocket.Bind(localEndPoint);
-            serverSocket.Listen(10);
-            while (true)
+            try
             {
-                try
-                {
-                    Socket clientSocket = serverSocket.Accept();
+                serverSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                IPEndPoint localEndPoint = new IPEndPoint(IPAddress.Any, 8080);
+                serverSocket.Bind(localEndPoint);
+                serverSocket.Listen(10);
 
-                    string clientIP = ((IPEndPoint)clientSocket.RemoteEndPoint).Address.ToString();
-                    AppendLog($"Telnet ket noi tu IP: {clientIP}");
-
-                    Thread clientThread = new Thread(() => HandleClient(clientSocket));
-                    clientThread.IsBackground = true;
-                    clientThread.Start();
-                }
-                catch (Exception ex)
+                while(!token.IsCancellationRequested)
                 {
-                    AppendLog("Loi: " + ex.Message);
+                    if(serverSocket.Poll(1000, SelectMode.SelectRead))
+                    {
+                        Socket clientSocket = serverSocket.Accept();
+                        string clientIP = ((IPEndPoint)clientSocket.RemoteEndPoint).Address.ToString();
+                        Task.Run(() => HandleClient(clientSocket));
+                    }
+                    else
+                    {
+                        Thread.Sleep(100);
+                    }
                 }
+            }
+            catch (SocketException se)
+            {
+                AppendLog("Socket loi:"  + se.Message);
+            }
+            catch(Exception ex)
+            {
+                AppendLog("Loi: " + ex.Message);
             }
         }
         private void AppendLog(string text)
         {
-            if(textBox1.InvokeRequired)
+            if (textBox1.InvokeRequired)
             {
-                textBox1.Invoke((MethodInvoker)(() => textBox1.AppendText(text + Environment.NewLine)));
+                textBox1.Invoke((MethodInvoker)(() => textBox1.AppendText(text)));
             }
             else
             {
-                 textBox1.AppendText(text + Environment.NewLine);
+                textBox1.AppendText(text + Environment.NewLine);
             }
         }
         private void HandleClient(Socket client)
@@ -88,6 +92,13 @@ namespace Lab_3
             {
                 AppendLog("Loi khi xu ly:" + ex.Message);
             }
+        }
+
+        private void Bai2_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            cts?.Cancel();
+            serverSocket?.Close();
+            listenTask?.Wait();
         }
     }
 }
