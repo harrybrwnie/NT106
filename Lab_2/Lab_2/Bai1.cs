@@ -23,23 +23,41 @@ namespace Lab_2
         private void bRead_Click(object sender, EventArgs e)
         {
             OpenFileDialog fdl = new OpenFileDialog();
-            fdl.ShowDialog();
-            FileStream fs = new FileStream(fdl.FileName, FileMode.OpenOrCreate);
-            StreamReader sr = new StreamReader(fs);
-
-            string content = sr.ReadToEnd();
-            rtbContent.Text = content;
-            fs.Close();
+            if (fdl.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    using (FileStream fs = new FileStream(fdl.FileName, FileMode.Open, FileAccess.Read))
+                    using (StreamReader sr = new StreamReader(fs))
+                    {
+                        rtbContent.Text = sr.ReadToEnd();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Lỗi khi đọc tệp: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
+
 
         private void bWrite_Click(object sender, EventArgs e)
         {
             SaveFileDialog sfd = new SaveFileDialog();
-            sfd.ShowDialog();
-      
-            StreamWriter sw = new StreamWriter(sfd.FileName, false);
-            sw.Write(rtbContent.Text.ToUpper());
-            sw.Close();
+            if (sfd.ShowDialog() == DialogResult.OK && !string.IsNullOrWhiteSpace(sfd.FileName))
+            {
+                try
+                {
+                    using (StreamWriter sw = new StreamWriter(sfd.FileName, false))
+                    {
+                        sw.Write(rtbContent.Text.ToUpper());
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Lỗi khi ghi tệp: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }

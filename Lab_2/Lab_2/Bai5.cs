@@ -29,6 +29,11 @@ namespace Lab_2
         }
         private void HienThiDanhSachFile(string thuMuc)
         {
+            if (!Directory.Exists(thuMuc))
+            {
+                MessageBox.Show("Thư mục không tồn tại hoặc đã bị xóa!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             listView1.Items.Clear();
             DirectoryInfo dir = new DirectoryInfo(thuMuc);
             FileInfo[] files = dir.GetFiles();
@@ -49,6 +54,10 @@ namespace Lab_2
                 fdl.ShowNewFolderButton = false;
                 if(fdl.ShowDialog() == DialogResult.OK)
                 {
+                    if (string.IsNullOrWhiteSpace(fdl.SelectedPath))
+                    {
+                        return;
+                    }
                     txtThuMuc.Text = fdl.SelectedPath;
                     HienThiDanhSachFile(fdl.SelectedPath);
                 }
