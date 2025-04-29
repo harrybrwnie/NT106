@@ -29,7 +29,6 @@ namespace Lab_3
                     string message = "Hello Server";
                     byte[] data = Encoding.UTF8.GetBytes(message);
                     stream.Write(data, 0, data.Length);
-                    stream.Flush();
                 }
                 else
                 {
