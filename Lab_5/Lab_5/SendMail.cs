@@ -47,6 +47,13 @@ namespace Lab_5
 
         private void btnSend_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(tbTo.Text) ||
+                string.IsNullOrWhiteSpace(tbSubject.Text) ||
+                string.IsNullOrWhiteSpace(tbBody.Text))
+            {
+                MessageBox.Show("Vui long nhap day du thong tin");
+                return;
+            }
             string to = tbTo.Text.Trim();
             string subject = tbSubject.Text.Trim();
             string body = tbBody.Text;
