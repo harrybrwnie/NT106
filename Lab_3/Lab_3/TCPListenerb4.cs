@@ -96,7 +96,8 @@ namespace Lab_3
                     IPEndPoint senderEP = (IPEndPoint)client.Client.RemoteEndPoint;
                     string fullMessage = $"[{senderEP.Address}:{senderEP.Port}] {clientName}: {message}";
                     AppendMessage(fullMessage);
-                    chatLog.Add(fullMessage);
+                    
+                    chatLog.Add($"{clientName}: {message}");
                     await BroadcastMessage($"{clientName}: {message}");
                 }
             }
