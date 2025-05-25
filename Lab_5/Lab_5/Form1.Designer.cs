@@ -31,7 +31,6 @@
             this.btnBai1 = new System.Windows.Forms.Button();
             this.btnBai2 = new System.Windows.Forms.Button();
             this.btnBai3 = new System.Windows.Forms.Button();
-            this.btnBai4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -65,23 +64,13 @@
             this.btnBai3.UseVisualStyleBackColor = true;
             this.btnBai3.Click += new System.EventHandler(this.btnBai3_Click);
             // 
-            // btnBai4
-            // 
-            this.btnBai4.Location = new System.Drawing.Point(459, 285);
-            this.btnBai4.Name = "btnBai4";
-            this.btnBai4.Size = new System.Drawing.Size(172, 75);
-            this.btnBai4.TabIndex = 3;
-            this.btnBai4.Text = "Bai 4";
-            this.btnBai4.UseVisualStyleBackColor = true;
-            this.btnBai4.Click += new System.EventHandler(this.btnBai4_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label1.Location = new System.Drawing.Point(336, 86);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 32);
+            this.label1.Size = new System.Drawing.Size(49, 20);
             this.label1.TabIndex = 4;
             this.label1.Text = "Lab 5";
             // 
@@ -91,7 +80,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnBai4);
             this.Controls.Add(this.btnBai3);
             this.Controls.Add(this.btnBai2);
             this.Controls.Add(this.btnBai1);
@@ -107,7 +95,6 @@
         private System.Windows.Forms.Button btnBai1;
         private System.Windows.Forms.Button btnBai2;
         private System.Windows.Forms.Button btnBai3;
-        private System.Windows.Forms.Button btnBai4;
         private System.Windows.Forms.Label label1;
     }
 }
