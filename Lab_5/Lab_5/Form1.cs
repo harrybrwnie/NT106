@@ -34,11 +34,12 @@ namespace Lab_5
             Bai3 b3 = new Bai3();
             b3.Show();
         }
-
+        /*
         private void btnBai4_Click(object sender, EventArgs e)
         {
             Bai4 b4 = new Bai4();
             b4.Show();
         }
+        */
     }
 }
